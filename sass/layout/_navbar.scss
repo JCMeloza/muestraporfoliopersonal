@@ -1,0 +1,36 @@
+@use "../abstracts/_variables" as *;
+
+.header__nav{
+
+    &-list{
+        display: flex;
+        flex-direction:row;
+        gap: 25px;
+        list-style: none;
+        margin-top: 22px;
+    }
+
+    &-img{
+        
+        background-repeat: no-repeat;
+        background-size: 20px 20px;
+        background-position: center;
+        width: 20px;
+        height: 20px;
+        margin: 0 auto;
+        display: block;
+    }
+    
+    .github{
+        background-image: url("../img/akar-icons_github-fill.svg");
+    }
+    .mentor{
+        background-image: url("../img/simple-icons_frontendmentor.svg");
+    }
+    .linkedin{
+        background-image: url("../img/linkedin.svg");
+    }
+    .twitter{
+        background-image: url("../img/akar-icons_twitter-fill.svg");
+    }
+}

@@ -2,8 +2,11 @@
 
 html * {
   font-family: $font-grotesk;
+  
+  color: white;
 }
 
 body {
   overflow-x: hidden;
+  background-color: $color-black;
 }
