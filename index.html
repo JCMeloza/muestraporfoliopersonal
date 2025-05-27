@@ -22,22 +22,24 @@
         <nav class="header__nav">
           <ul class="header__nav-list">
             <li class="header__nav-item">
-              <a href="#" class="header__nav-link "><span class="header__nav-img github"></span></a>
+              <a href="#" class="header__nav-link"
+                ><span class="header__nav-img github"></span
+              ></a>
             </li>
             <li class="header__nav-item">
-              <a href="#" class="header__nav-link "><span class="header__nav-img mentor"></span></a>
+              <a href="#" class="header__nav-link"
+                ><span class="header__nav-img mentor"></span
+              ></a>
             </li>
             <li class="header__nav-item">
-              <a
-                href="#"
-                class="header__nav-link "
-              ><span class="header__nav-img linkedin"></span></a>
+              <a href="#" class="header__nav-link"
+                ><span class="header__nav-img linkedin"></span
+              ></a>
             </li>
             <li class="header__nav-item">
-              <a
-                href="#"
-                class="header__nav-link "
-              ><span class="header__nav-img twitter"></span></a>
+              <a href="#" class="header__nav-link"
+                ><span class="header__nav-img twitter"></span
+              ></a>
             </li>
           </ul>
         </nav>
@@ -58,7 +60,6 @@
             <a class="button" href="#">CONTACT ME</a>
           </p>
           <hr class="hero__separator skills-hr" />
-          
         </section>
 
         <section class="skills">
@@ -194,42 +195,74 @@
             </p>
           </div>
           <div class="footer__form">
-            <input
-              type="text"
-              name="name"
-              placeholder="NAME"
-              class="footer__input footer__input--name"
-            />
-            <hr class="hero__separator" />
+            <div class="form-group">
+              <input
+                type="text"
+                name="name"
+                placeholder="NAME"
+                class="footer__input footer__input--name"
+                required
+                pattern="[A-Za-z\s]+"
+                minlength="2"
+              />
+              <span class="error-message">Sorry, invalid format here</span>
+            </div>
 
-            <input
-              type="email"
-              name="email"
-              placeholder="EMAIL"
-              class="footer__input footer__input--email"
-            />
-            <hr class="hero__separator" />
+            <div class="form-group">
+              <input
+                type="email"
+                name="email"
+                placeholder="EMAIL"
+                class="footer__input footer__input--email"
+                required
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              />
+              <span class="error-message">Sorry, invalid format here</span>
+            </div>
 
-            <textarea
-              name="message"
-              placeholder="MESSAGE"
-              class="footer__textarea"
-            ></textarea>
-            <hr class="hero__separator" />
+            <div class="form-group">
+              <textarea
+                name="message"
+                placeholder="MESSAGE"
+                class="footer__textarea"
+                required
+                minlength="10"
+              ></textarea>
+              <span class="error-message">Sorry, invalid format here</span>
+            </div>
 
-            <button type="submit" class="footer__button">Send Message</button>
-            <hr class="hero__separator" />
-
+            <div class="form-group form-group--button">
+              <button type="submit" class="button_formulario">
+                Send Message
+              </button>
+            </div>
+          </div>
         </form>
-      </div>
-      <div class="footer__social">
-        <div class="header__logo">
-          <img src="/img/adamkeyes.jpg" alt="" class="header__logo-img" />
+
+        <hr class="footer__separator social-hr" />
+        <div class="footer__social">
+          <div class="footer__logo">
+            <p class="footer__logo-name">adamkeyes</p>
+          </div>
+          <nav class="footer__nav">
+            <a
+              href="#"
+              class="footer__social-link footer__social-link--github"
+            ><img src="/img/akar-icons_github-fill.svg" alt=""></a>
+            <a
+              href="#"
+              class="footer__social-link footer__social-link--mentor"
+            ><img src="img/simple-icons_frontendmentor.svg" alt=""></a>
+            <a
+              href="#"
+              class="footer__social-link footer__social-link--linkedin"
+            ><img src="/img/LinkedIn.svg" alt=""></a>
+            <a
+              href="#"
+              class="footer__social-link footer__social-link--twitter"
+            ><img src="/img/akar-icons_twitter-fill.svg" alt=""></a>
+          </nav>
         </div>
-        <a href="#" class="footer__social-link footer__social-link--github"></a>
-        <a href="#" class="footer__social-link footer__social-link--mentor"></a>
-        <a href="#" class="footer__social-link footer__social-link--linkedin"></a>
-        <a href="#" class="footer__social-link footer__social-link--twitter"></a>
       </div>
     </footer>
     <script type="module" src="/src/main.js"></script>
