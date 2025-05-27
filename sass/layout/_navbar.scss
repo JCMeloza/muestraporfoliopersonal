@@ -34,3 +34,10 @@
         background-image: url("../img/akar-icons_twitter-fill.svg");
     }
 }
+
+.footer__nav{
+    
+        display: flex;
+        flex-direction:row;
+        gap: 25px;
+}
