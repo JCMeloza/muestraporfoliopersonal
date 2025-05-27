@@ -44,3 +44,25 @@
     margin: 10px auto 0;
   }
 }
+@mixin button_formulario(){
+  font-size:  16px;
+  font-weight: 500;
+  line-break: 26px;
+  letter-spacing: 2.29px;
+  text-decoration: none;
+  background-color: transparent;
+  border: 0;
+  text-transform: uppercase;
+  margin-top: 32px ;
+  &:hover {
+    color: $color-green;
+  }
+  &::after {
+    content: "";
+    display: block;
+    width: 142px;
+    height: 3px;
+    background-color: $color-green;
+    margin: 10px auto 0;
+  }
+}
