@@ -3,3 +3,7 @@
 .button {
     @include b.button();
 }
+
+.button_formulario {
+    @include b.button_formulario();
+}
