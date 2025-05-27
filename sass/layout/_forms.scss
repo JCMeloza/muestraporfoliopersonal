@@ -1,0 +1,65 @@
+.form-group {
+  position: relative;
+  margin-bottom: 2rem;
+
+  .error-message {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 0.75rem;
+    color: #ff6f5b;
+  }
+
+  &--button {
+    display: flex;
+    justify-content: flex-end;
+
+    .button_formulario {
+      margin-left: auto;
+    }
+  }
+}
+
+.footer__input,
+.footer__textarea {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  color: #ffffff;
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+
+  &::placeholder {
+    color: #ffffff;
+    opacity: 0.5;
+  }
+
+  &:focus {
+    outline: none;
+    border-bottom-color: #4ee1a0;
+  }
+
+  // Estilos para validación
+  &:invalid:not(:placeholder-shown) {
+    border-bottom-color: #ff6f5b;
+
+    & + .error-message {
+      display: block;
+    }
+  }
+
+  &:valid:not(:placeholder-shown) {
+    border-bottom-color: #4ee1a0;
+  }
+}
+
+// Ajustes específicos para el textarea
+.footer__textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+
