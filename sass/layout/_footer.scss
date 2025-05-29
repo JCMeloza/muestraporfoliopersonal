@@ -53,3 +53,13 @@ footer{
     }
     
 }
+.background-elipse-footer{
+    background-image: url("../img/group-oval.png");
+    width: 530px ;
+    height: 129px;
+    position: relative;
+    bottom: 447px;
+    left: -220px;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
