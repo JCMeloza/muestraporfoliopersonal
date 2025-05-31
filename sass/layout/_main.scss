@@ -37,6 +37,11 @@
         font-weight: bold;
         margin-bottom: 20px;
         line-height: 40px;
+        
+        .tablet-break {
+            display: none;
+        }
+        
         @include m.breakpoint(tablet){
             font-size: 72px;
             font-weight: 600;
@@ -45,8 +50,10 @@
             text-align: left;
             z-index: 2;
 
+            .tablet-break {
+                display: inline;
+            }
         }
-        
     }
     &__title::after {
             content: "";
