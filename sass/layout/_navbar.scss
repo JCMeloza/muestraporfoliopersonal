@@ -1,17 +1,25 @@
 @use "../abstracts/_variables" as *;
+@use "../abstracts/_mixins" as m;
 
 .header__nav{
-
+    @include m.breakpoint(tablet){
+        display: flex;
+        align-items: center;
+        padding-top: 29px;
+    }
     &-list{
         display: flex;
-        flex-direction:row;
+        flex-direction: row;
         gap: 25px;
         list-style: none;
         margin-top: 22px;
+        @include m.breakpoint(tablet){
+            margin-top: 0;
+            z-index: 2;
+        }
     }
 
     &-img{
-        
         background-repeat: no-repeat;
         background-size: 20px 20px;
         background-position: center;
