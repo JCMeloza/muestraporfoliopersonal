@@ -3,23 +3,37 @@
 
 .main {
   padding: 40px 16px 80px 16px;
+  overflow: hidden;
   @include m.breakpoint(tablet){
         padding: 0;   
         padding-left: 31px;
         padding-right: 31px; 
         }
+  
+}
+
 
   .group-right{
     background-image: url("../img/grupo-oval-der.png");
-    width: 530px ;
+    width: 187px ;
     height: 129px;
     position: absolute;
     top: 1274px;
     left: 252px;
     background-repeat: no-repeat;
+    overflow: hidden;
+    @include m.breakpoint(tablet){
+        top: 921px;
+        left: 596px;
+        
+        height: 129px;
+        z-index: 1;
+        display:block;
+            overflow: hidden;
+
+    }
     
   }
-}
 .hero {
     display: flex;
     flex-direction: column;
@@ -76,7 +90,11 @@
         color: $color-grey-white;
         font-size: 16px;
         line-height: 26px;
-    }
+        @include m.breakpoint(tablet){
+            margin-top: 60px;
+            font-size: 18px;
+        }
+}
 
     
     &__separator{
@@ -86,6 +104,11 @@
     .skills-hr{
         margin-top: 80px;
         margin-bottom: 40px;
+        @include m.breakpoint(tablet){
+            display: block;
+            margin-top: 60px;
+            width: 708px;
+        }
     }
     
 }
@@ -94,23 +117,45 @@
     display:flex;
     flex-direction: column;
     align-items: center;
+    @include m.breakpoint(tablet){
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        column-gap: 52px;
+        justify-content: flex-start;
+        justify-items: start;
+    }
     
     &__item{
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-bottom: 24px;
+        @include m.breakpoint(tablet){
+            align-items: start;
+        }
     }
+
     &__name{
         font-size: 32px;
         font-weight: 600;
         line-height: 40px;
+        @include m.breakpoint(tablet){
+            font-size:56px;
+            font-weight: 600;
+            line-height: 56px;
+            letter-spacing: -1.5px;
+        }
     }
     &__experience{
         font-size: 17px;
         font-weight: 400;
         line-height: 26px;
         color: $color-grey-white;
+                @include m.breakpoint(tablet){
+                    font-size: 18px;
+                }
+
     }
 }
 .projects-hr{
