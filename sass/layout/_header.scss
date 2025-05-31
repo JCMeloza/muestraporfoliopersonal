@@ -50,6 +50,7 @@ header{
             right: 0;
             top: 0;
             background-color: #242424;
+            overflow: hidden;
         }
         &-bg {
             width: 100%;
@@ -72,6 +73,10 @@ header{
     left: -220px;
     background-repeat: no-repeat;
     z-index: 1;
+    @include m.breakpoint(tablet){
+        top: 87px;
+        left:-220px
+    }
 }
 .background-round{
     background-image: url("../img/oval.svg");
@@ -83,4 +88,9 @@ header{
     background-repeat: no-repeat;
     z-index: 1;
     overflow: hidden;
+    @include m.breakpoint(tablet){
+        top: 471px;
+        left:712px;
+        z-index: 2;
+    }
 }
