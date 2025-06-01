@@ -54,6 +54,9 @@
   border: 0;
   text-transform: uppercase;
   margin-top: 32px ;
+  @include breakpoint(tablet){
+    margin-top: 0;
+  }
   &:hover {
     color: $color-green;
   }
