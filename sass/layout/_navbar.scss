@@ -29,14 +29,22 @@
         display: block;
     }
     
+    
     .github{
-        background-image: url("../img/akar-icons_github-fill.svg");
+        background-image: url("../img/githubPath.svg");
+        
+        &:hover{
+            color:  $color-green;
+        }
     }
     .mentor{
         background-image: url("../img/simple-icons_frontendmentor.svg");
     }
     .linkedin{
         background-image: url("../img/linkedin.svg");
+        &:hover{
+            color:  $color-green;
+        }
     }
     .twitter{
         background-image: url("../img/akar-icons_twitter-fill.svg");
