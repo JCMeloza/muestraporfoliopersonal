@@ -1,101 +1,129 @@
 @use "../abstracts/_variables" as *;
 @use "../abstracts/_mixins" as m;
-header{
-    background-color: $color-black;
-    width: 100%;
+header {
+  background-color: $color-black;
+  width: 100%;
 }
 .header {
-    padding-top: 20px;
-    display: flex;
-    flex-direction: column;
-    width: 174.21px;
-    height: 383px;
-    margin: auto;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 174.21px;
+  height: 383px;
+  margin: auto;
+  align-items: center;
+  background: linear-gradient(to bottom, #0000 0%, #0000 0%, #242424 100%);
+  @include m.breakpoint(tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
     align-items: center;
-    background: linear-gradient(to bottom, #0000 0%, #0000 0%, #242424 100%);
-    @include m.breakpoint(tablet){
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-        height: auto;
-        align-items: center;
-        padding: 0 30px;
-        text-align: left;
-        background: transparent;
+    padding: 0 30px;
+    text-align: left;
+    background: transparent;
+
+  }
+  @include m.breakpoint(desktop){
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+    @include m.breakpoint(desktopxl){
+        padding-left: 165px;
+        padding-right: 165px;
     }
-    &__logo{
-        font-size: 24px;
-        font-weight: 600;
-        line-height: 32px;
-        @include m.breakpoint(tablet){
-            padding-top: 29px;
-            font-size: 32px;
-            font-weight: bold;
-            line-height: 32px;
-            letter-spacing: 0.44px;
-        }
+  &__logo {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    @include m.breakpoint(tablet) {
+      padding-top: 29px;
+      font-size: 32px;
+      font-weight: bold;
+      line-height: 32px;
+      letter-spacing: 0.44px;
     }
-    &__image {
-        width: 174.21px;
-        height: 242px;
-        display: flex;
-        margin-bottom: 40px;
-        margin-top: 49px;
-        @include m.breakpoint(tablet){
-            order: 2;
-            width: 322px;
-            height: 600px;
-            margin: 0;
-            position: absolute;
-            right: 0;
-            top: 0;
-            background-color: #242424;
-            overflow: hidden;
-        }
-        &-bg {
-            width: 100%;
-            height: 100%;
-            z-index: 1;
-            @include m.breakpoint(tablet){
-                width: 349px;
-                height: 486px;
-                margin-top: 127px;
-            }
-        }
+  }
+  &__image {
+    width: 174.21px;
+    height: 242px;
+    display: flex;
+    margin-bottom: 40px;
+    margin-top: 49px;
+    @include m.breakpoint(tablet) {
+      order: 2;
+      width: 322px;
+      height: 600px;
+      margin: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      background-color: #242424;
+      overflow: hidden;
     }
+    @include m.breakpoint(desktop){
+        right: 100px;
+        width: 400px;
+        height: 675px;
+    }
+    @include m.breakpoint(desktopxl){
+        right: 165px;
+        width: 445px;
+        height: 720px;
+    }
+    &-bg {
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      @include m.breakpoint(tablet) {
+        width: 349px;
+        height: 486px;
+        margin-top: 127px;
+      }
+      @include m.breakpoint(desktop){
+        width: 445px;
+        height: 618px;
+        
+      }
+    }
+  }
 }
-.background{
-    overflow: hidden;
+.background {
+  overflow: hidden;
 }
-.background-elipse{
-    background-image: url("../img/group-oval.png");
-    width: 530px ;
-    height: 129px;
-    position: absolute;
-    top: 125px;
+.background-elipse {
+  background-image: url("../img/group-oval.png");
+  width: 530px;
+  height: 129px;
+  position: absolute;
+  top: 125px;
+  left: -220px;
+  background-repeat: no-repeat;
+  z-index: 1;
+  @include m.breakpoint(tablet) {
+    top: 87px;
     left: -220px;
-    background-repeat: no-repeat;
-    z-index: 1;
-    @include m.breakpoint(tablet){
-        top: 87px;
-        left:-220px
-    }
+  }
 }
-.background-round{
-    background-image: url("../img/oval.svg");
-    width: 56px ;
-    height: 129px;
-    position: absolute;
-    top: 256px;
-    left: 356px;
-    background-repeat: no-repeat;
-    z-index: 1;
+.background-round {
+  background-image: url("../img/oval.svg");
+  width: 56px;
+  height: 129px;
+  position: absolute;
+  top: 256px;
+  right: 0;
+  background-repeat: no-repeat;
+  z-index: 1;
+  overflow: hidden;
+  @include m.breakpoint(tablet) {
+    top: 471px;
+    z-index: 2;
     overflow: hidden;
-    @include m.breakpoint(tablet){
-        top: 471px;
-        left:712px;
-        z-index: 2;
-        overflow: hidden;
-        width: 56px;
-    }
+    width: 56px;
+  }
+  @include m.breakpoint(desktop){
+    right: 439px;
+    width: 129px;
+    top: 508px;
+  }
 }
