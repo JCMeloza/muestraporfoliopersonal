@@ -7,6 +7,9 @@
         align-items: center;
         padding-top: 29px;
     }
+    @include m.breakpoint(desktop){
+        margin-right: 29px;
+    }
     &-list{
         display: flex;
         flex-direction: row;
