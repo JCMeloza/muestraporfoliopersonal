@@ -64,6 +64,9 @@ header{
         }
     }
 }
+.background{
+    overflow: hidden;
+}
 .background-elipse{
     background-image: url("../img/group-oval.png");
     width: 530px ;
@@ -80,7 +83,7 @@ header{
 }
 .background-round{
     background-image: url("../img/oval.svg");
-    width: 129px ;
+    width: 56px ;
     height: 129px;
     position: absolute;
     top: 256px;
@@ -92,5 +95,7 @@ header{
         top: 471px;
         left:712px;
         z-index: 2;
+        overflow: hidden;
+        width: 56px;
     }
 }
