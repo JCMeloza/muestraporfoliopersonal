@@ -19,6 +19,13 @@
         }
     }
 
+    &-link {
+        &:hover .header__nav-img {
+            filter: brightness(0) saturate(100%) invert(69%) sepia(84%) saturate(342%) hue-rotate(93deg) brightness(95%) contrast(88%);
+            
+        }
+    }
+
     &-img{
         background-repeat: no-repeat;
         background-size: 20px 20px;
@@ -27,24 +34,17 @@
         height: 20px;
         margin: 0 auto;
         display: block;
+        transition: filter 0.3s ease;
     }
     
-    
     .github{
-        background-image: url("../img/githubPath.svg");
-        
-        &:hover{
-            color:  $color-green;
-        }
+        background-image: url("../img/akar-icons_github-fill.svg");
     }
     .mentor{
         background-image: url("../img/simple-icons_frontendmentor.svg");
     }
     .linkedin{
         background-image: url("../img/linkedin.svg");
-        &:hover{
-            color:  $color-green;
-        }
     }
     .twitter{
         background-image: url("../img/akar-icons_twitter-fill.svg");
@@ -52,8 +52,17 @@
 }
 
 .footer__nav{
-    
-        display: flex;
-        flex-direction:row;
-        gap: 25px;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+
+    .footer__social-link {
+        &:hover img {
+            filter: brightness(0) saturate(100%) invert(69%) sepia(84%) saturate(342%) hue-rotate(93deg) brightness(95%) contrast(88%);
+        }
+
+        img {
+            transition: filter 0.3s ease;
+        }
+    }
 }
