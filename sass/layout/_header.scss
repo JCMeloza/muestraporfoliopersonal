@@ -43,6 +43,9 @@ header {
       line-height: 32px;
       letter-spacing: 0.44px;
     }
+    @include m.breakpoint(desktopxl){
+      padding-top: 39px;
+    }
   }
   &__image {
     width: 174.21px;
@@ -103,6 +106,9 @@ header {
   @include m.breakpoint(tablet) {
     top: 87px;
     left: -220px;
+  }
+  @include m.breakpoint(desktopxl){
+    left: 0px;
   }
 }
 .background-round {
