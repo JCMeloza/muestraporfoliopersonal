@@ -161,6 +161,9 @@
             margin-top: 218px;
             width: 146%;
         }
+        @include m.breakpoint(desktopxl){
+            width: 159%;
+        }
     }
     
 }
