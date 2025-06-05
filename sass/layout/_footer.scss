@@ -22,10 +22,12 @@ footer {
     padding-bottom: 0;
   }
   form {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    gap: 133px;
+    @include m.breakpoint(desktop) {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      gap: 133px;
+    }
   }
   &__contact {
     width: 343px;
@@ -118,7 +120,7 @@ footer {
   }
   &__form {
     @include m.breakpoint(desktop) {
-      width: 434px;
+      width: 588px;
     }
   }
 }
