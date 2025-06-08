@@ -1,7 +1,10 @@
 # Mi Portafolio Personal
 
 Este es una muestra de un portafolio personal desarrollado en figma que se ha pasado a web. Esta página web tiene un diseño moderno y responsive que muestra los proyectos y habilidades como desarrollador web.
- 
+
+# Ver el proyecto online en github pages
+
+https://jcmeloza.github.io/muestraporfoliopersonal/
 
 ## 🚀 Tecnologías Utilizadas
 
